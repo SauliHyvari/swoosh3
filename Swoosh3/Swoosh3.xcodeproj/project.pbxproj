@@ -16,6 +16,7 @@
 		47EE79701F5155F10060D363 /* Swoosh3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EE796F1F5155F10060D363 /* Swoosh3UITests.swift */; };
 		47EE797F1F51566E0060D363 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EE797E1F51566E0060D363 /* LeagueVC.swift */; };
 		47EE79811F51567D0060D363 /* SkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EE79801F51567D0060D363 /* SkillsVC.swift */; };
+		47F135C41F54807D000356EC /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F135C31F54807D000356EC /* BottomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		47EE79711F5155F10060D363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47EE797E1F51566E0060D363 /* LeagueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		47EE79801F51567D0060D363 /* SkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsVC.swift; sourceTree = "<group>"; };
+		47F135C31F54807D000356EC /* BottomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				47EE79561F5155F10060D363 /* Assets.xcassets */,
 				47EE79581F5155F10060D363 /* LaunchScreen.storyboard */,
 				47EE795B1F5155F10060D363 /* Info.plist */,
+				47F135C31F54807D000356EC /* BottomButton.swift */,
 			);
 			path = Swoosh3;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EE79811F51567D0060D363 /* SkillsVC.swift in Sources */,
+				47F135C41F54807D000356EC /* BottomButton.swift in Sources */,
 				47EE79521F5155F10060D363 /* WelcomeVC.swift in Sources */,
 				47EE79501F5155F10060D363 /* AppDelegate.swift in Sources */,
 				47EE797F1F51566E0060D363 /* LeagueVC.swift in Sources */,
