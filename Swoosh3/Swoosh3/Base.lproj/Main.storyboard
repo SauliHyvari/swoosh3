@@ -62,6 +62,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="P47-lc-2Zs" kind="show" identifier="WelcomeToLeague" id="645-ro-8z4"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="U3u-Uq-Jbw">
                                 <rect key="frame" x="128" y="40" width="119" height="20"/>
@@ -179,6 +182,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-Rm-Zv8">
+                                <rect key="frame" x="16" y="30" width="35" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="50E-DJ-oIF"/>
+                                    <constraint firstAttribute="height" constant="40" id="UTT-wf-5X1"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="rmC-M2-cmg" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="8r7-sG-Ays"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -194,6 +208,7 @@
                             <constraint firstItem="Aey-Hw-DY4" firstAttribute="top" secondItem="s46-Zp-adB" secondAttribute="bottom" constant="50" id="eWg-yi-5Yy"/>
                             <constraint firstItem="Ux5-8X-QWK" firstAttribute="top" secondItem="XpU-ZS-YFS" secondAttribute="top" id="fwx-Qn-KMr"/>
                             <constraint firstItem="uHb-8I-4rU" firstAttribute="centerX" secondItem="XpU-ZS-YFS" secondAttribute="centerX" id="tgK-5J-CJx"/>
+                            <constraint firstItem="gF6-Rm-Zv8" firstAttribute="leading" secondItem="XpU-ZS-YFS" secondAttribute="leadingMargin" id="tgy-Kk-hTd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uHb-8I-4rU" secondAttribute="trailing" id="vSx-au-qBX"/>
                             <constraint firstItem="Aey-Hw-DY4" firstAttribute="leading" secondItem="XpU-ZS-YFS" secondAttribute="leadingMargin" id="xHY-KZ-S6d"/>
                         </constraints>
@@ -204,8 +219,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrU-W6-Mbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rmC-M2-cmg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="818" y="122"/>
+            <point key="canvasLocation" x="816.79999999999995" y="121.88905547226388"/>
         </scene>
         <!--SkillsVC-->
         <scene sceneID="cyo-y7-mP6">
@@ -301,6 +317,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
