@@ -181,12 +181,15 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="P47-lc-2Zs" eventType="touchUpInside" id="bwx-Ft-jfT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-Rm-Zv8">
-                                <rect key="frame" x="16" y="30" width="35" height="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-Rm-Zv8">
+                                <rect key="frame" x="16" y="30" width="35" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="50E-DJ-oIF"/>
-                                    <constraint firstAttribute="height" constant="40" id="UTT-wf-5X1"/>
+                                    <constraint firstAttribute="width" constant="35" id="T71-n1-TIV"/>
+                                    <constraint firstAttribute="height" constant="40" id="lC4-RV-1WQ"/>
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
@@ -197,6 +200,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="s46-Zp-adB" firstAttribute="centerX" secondItem="XpU-ZS-YFS" secondAttribute="centerX" id="98a-pT-e6E"/>
+                            <constraint firstItem="gF6-Rm-Zv8" firstAttribute="leading" secondItem="XpU-ZS-YFS" secondAttribute="leadingMargin" id="9Ht-TY-zzi"/>
                             <constraint firstAttribute="trailing" secondItem="Ux5-8X-QWK" secondAttribute="trailing" id="9kD-7j-rc2"/>
                             <constraint firstItem="Aey-Hw-DY4" firstAttribute="centerX" secondItem="XpU-ZS-YFS" secondAttribute="centerX" id="Bht-OG-89x"/>
                             <constraint firstItem="uHb-8I-4rU" firstAttribute="leading" secondItem="XpU-ZS-YFS" secondAttribute="leadingMargin" id="Nkv-JA-daP"/>
@@ -208,11 +212,14 @@
                             <constraint firstItem="Aey-Hw-DY4" firstAttribute="top" secondItem="s46-Zp-adB" secondAttribute="bottom" constant="50" id="eWg-yi-5Yy"/>
                             <constraint firstItem="Ux5-8X-QWK" firstAttribute="top" secondItem="XpU-ZS-YFS" secondAttribute="top" id="fwx-Qn-KMr"/>
                             <constraint firstItem="uHb-8I-4rU" firstAttribute="centerX" secondItem="XpU-ZS-YFS" secondAttribute="centerX" id="tgK-5J-CJx"/>
-                            <constraint firstItem="gF6-Rm-Zv8" firstAttribute="leading" secondItem="XpU-ZS-YFS" secondAttribute="leadingMargin" id="tgy-Kk-hTd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uHb-8I-4rU" secondAttribute="trailing" id="vSx-au-qBX"/>
                             <constraint firstItem="Aey-Hw-DY4" firstAttribute="leading" secondItem="XpU-ZS-YFS" secondAttribute="leadingMargin" id="xHY-KZ-S6d"/>
+                            <constraint firstItem="gF6-Rm-Zv8" firstAttribute="top" secondItem="YFt-mb-iZo" secondAttribute="bottom" constant="10" id="zbG-wT-py2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="g64-g1-9ZT" kind="show" identifier="skillVCSegue" id="QFN-cX-cbT"/>
+                    </connections>
                 </viewController>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" id="K4n-CA-TmT">
                     <rect key="frame" x="0.0" y="0.0" width="119" height="20"/>
@@ -291,11 +298,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cac-C4-p6T">
+                                <rect key="frame" x="16" y="30" width="35" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="URz-4k-Z0Y"/>
+                                    <constraint firstAttribute="height" constant="40" id="fKM-Wi-zhD"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="WLx-lv-vxs" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="1mU-MJ-6Te"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mce-FD-zLw" firstAttribute="centerX" secondItem="3C2-Yi-L6y" secondAttribute="centerX" id="6jK-at-gWh"/>
                             <constraint firstItem="2TJ-hC-Ggn" firstAttribute="leading" secondItem="3C2-Yi-L6y" secondAttribute="leadingMargin" id="70L-ty-8zf"/>
+                            <constraint firstItem="cac-C4-p6T" firstAttribute="top" secondItem="ZAy-oj-dHa" secondAttribute="bottom" constant="10" id="7Oh-27-hpt"/>
                             <constraint firstItem="FGS-fL-nCS" firstAttribute="leading" secondItem="3C2-Yi-L6y" secondAttribute="leading" id="96f-xL-TwO"/>
                             <constraint firstItem="FGS-fL-nCS" firstAttribute="top" secondItem="3C2-Yi-L6y" secondAttribute="top" id="KCb-fJ-bsO"/>
                             <constraint firstItem="YV5-Je-ydE" firstAttribute="top" secondItem="ZAy-oj-dHa" secondAttribute="bottom" constant="20" id="Pp6-eg-PcD"/>
@@ -306,12 +325,14 @@
                             <constraint firstItem="YV5-Je-ydE" firstAttribute="centerX" secondItem="3C2-Yi-L6y" secondAttribute="centerX" id="c2Y-a5-bR3"/>
                             <constraint firstItem="NOO-gk-Oe1" firstAttribute="top" secondItem="mce-FD-zLw" secondAttribute="bottom" constant="20" id="hdZ-zd-X3O"/>
                             <constraint firstItem="NOO-gk-Oe1" firstAttribute="top" secondItem="FGS-fL-nCS" secondAttribute="bottom" id="kqQ-wb-8pc"/>
+                            <constraint firstItem="cac-C4-p6T" firstAttribute="leading" secondItem="3C2-Yi-L6y" secondAttribute="leadingMargin" id="lQ2-c1-iY1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2TJ-hC-Ggn" secondAttribute="trailing" id="ttL-7S-30C"/>
                             <constraint firstItem="2TJ-hC-Ggn" firstAttribute="centerX" secondItem="3C2-Yi-L6y" secondAttribute="centerX" id="xhz-g2-x1j"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGa-Ea-5N9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WLx-lv-vxs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1503" y="120"/>
         </scene>
